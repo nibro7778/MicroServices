@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+using MediatR;
+using Branch.API.Features.PingMe.Post;
 
 namespace Branch.API.Features.PingMe
 {
@@ -11,21 +9,25 @@ namespace Branch.API.Features.PingMe
     [ApiController]
     public class PingMeController : ControllerBase
     {
-        [HttpGet("DoEcho")]
-        public IActionResult DoEcho()
+        private readonly IMediator _mediator;
+
+        public PingMeController(IMediator mediator)
         {
-            return Ok("Hello!!! DoEcho");
+            _mediator = mediator;
         }
+
+        [HttpGet("DoEcho")]
+        public ActionResult DoEcho() {
+            return Ok("Hello World!!!");
+        } 
 
         [HttpPost("DoEcho")]
-        public IActionResult DoEcho(DoEchoRequest request)
+        public async Task<IActionResult> DoEcho(DoEchoRequest request)
         {
-            return Ok($"Hello!!! {request.Value}");
+            var result = await _mediator.Send(request);
+            return Ok(result);
         }
     }
 
-    public class DoEchoRequest
-    {
-        public string Value { get; set; }
-    }
+    
 }
