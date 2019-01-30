@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Branch.API", "Branch.API\Branch.API.csproj", "{C26B472F-F086-4D47-AF5E-96E20BA72D0E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F14015D6-F298-4CF1-B736-1A068D37BB68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroService.RavenDb", "MicroService.RavenDb\MicroService.RavenDb.csproj", "{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{C26B472F-F086-4D47-AF5E-96E20BA72D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C26B472F-F086-4D47-AF5E-96E20BA72D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C26B472F-F086-4D47-AF5E-96E20BA72D0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA} = {F14015D6-F298-4CF1-B736-1A068D37BB68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {018EA37F-2ABD-4440-90E7-51884A10C360}
