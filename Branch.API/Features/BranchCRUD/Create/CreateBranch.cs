@@ -13,14 +13,16 @@ namespace Branch.API.Features.BranchCRUD.Create
         public string Name { get; set; }
         public string Address { get; set; }
         public string ContactNo { get; set; }
+        public string Email { get; set; }
     }
 
     public class CreateBranchResponse
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
         public string ContactNo { get; set; }
+        public string Email { get; set; }
     }
 
     public class CreateBranchValidator : AbstractValidator<CreateBranchRequest>
@@ -30,6 +32,7 @@ namespace Branch.API.Features.BranchCRUD.Create
             RuleFor(x => x.Name).NotEmpty();
             RuleFor(x => x.Address).NotEmpty();
             RuleFor(x => x).NotEmpty();
+            RuleFor(x => x.Email).EmailAddress();
         }
     }
 
