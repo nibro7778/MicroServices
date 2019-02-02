@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{F14015
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroService.RavenDb", "MicroService.RavenDb\MicroService.RavenDb.csproj", "{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Branch", "Branch\Branch.csproj", "{3D60AE0D-F143-474B-89C7-4B56DF7B7AE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EBEE5E6-F17E-4340-9E84-60AF7C6E57AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D60AE0D-F143-474B-89C7-4B56DF7B7AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D60AE0D-F143-474B-89C7-4B56DF7B7AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D60AE0D-F143-474B-89C7-4B56DF7B7AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D60AE0D-F143-474B-89C7-4B56DF7B7AE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

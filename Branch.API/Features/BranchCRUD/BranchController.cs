@@ -29,7 +29,7 @@ namespace Branch.API.Features.BranchCRUD
         [HttpGet]
         public async Task<ActionResult<CreateBranchResponse>> Get([FromBody] GetBranchRequest request)
         {
-            var response = _mediator.Send(request);
+            var response = await _mediator.Send(request);
             if (response == null)
                 return NotFound();
 
